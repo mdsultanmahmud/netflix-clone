@@ -6,24 +6,20 @@ import Register from "./sharedPages/Register/Register"
 import './style.scss'
 function App() {
   const router = createBrowserRouter([
+
     {
       path: '/',
-      element: <MainLayout></MainLayout>,
-      children:[
-        {
-          path:'/',
-          element: <Home></Home>
-        },
-        {
-          path:'/login',
-          element: <Login></Login>
-        },
-        {
-          path:'/register',
-          element:<Register></Register>
-        }
-      ]
+      element: <Home></Home>
+    },
+    {
+      path: '/login',
+      element: <Login></Login>
+    },
+    {
+      path: '/register',
+      element: <Register></Register>
     }
+
   ])
   return (
     <RouterProvider router={router}>
