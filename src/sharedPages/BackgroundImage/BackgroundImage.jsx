@@ -1,9 +1,9 @@
 import React from 'react';
-
+import bgImg from '../../assets/login .jpg'
 const BackgroundImage = () => {
     return (
-        <div>
-            <h1>Background image</h1>
+        <div className='bg-img'>
+            <img src={bgImg} alt="" />
         </div>
     );
 };

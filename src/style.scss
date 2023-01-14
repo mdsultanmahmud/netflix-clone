@@ -1,0 +1,52 @@
+$btnColor: #e50914;
+// designing background image components 
+.bg-img{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// design header section 
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    img{
+        width: 10rem;
+    }
+    button{
+        background-color: $btnColor;
+        color: white;
+        padding: .5rem 1rem;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+    }
+}
+
+
+// designing register page 
+.register-container{
+    position: relative;
+    .register-sub-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        .register-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
